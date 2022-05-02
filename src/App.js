@@ -11,7 +11,7 @@ function App() {
 // https://deliveroo-backend-reactv1.herokuapp.com/
 // http://localhost:3100/
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:3100/");
+    const response = await axios.get("https://deliveroo-backend-reactv1.herokuapp.com/");
     console.log(response.data);
     setData(response.data);
     setIsLoading(false);
