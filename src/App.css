@@ -4,3 +4,142 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+.big-header{
+  width: 100%;
+  height : 45vh;
+  /* padding: 0 15vw; */
+  /* background-color: aqua; */
+  /* border: 2px solid aqua; */
+}
+
+.top-header{
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 1px grey solid;
+  /* border:solid red 1px; */
+}
+.top-header > img{
+  width:auto;
+  height: 100%;
+  padding-left: 10vw;
+}
+.desc{
+  width: 80vw;
+  height: 35vh;
+  margin: 5vh 10vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  line-height: 28.8px;
+  color: #868A8A;
+}
+
+.desc h1{
+  font-size: 32px;
+  line-height: 26.7px;
+  color: #2E3333;
+  margin-bottom: 5vh;
+}
+
+.name-desc{
+  width: 60%;
+}
+.desc > img{
+  width: 320px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.body{
+  background-color: #F2F5F5;
+  /* margin: 0 10vw;  */
+}
+.each-cat{
+  width: 100vw;
+  height: 110%;
+  /* border:red solid 2px; */
+}
+
+.each{
+  width: 55vw;
+  /* border: 2px solid blue; */
+  margin: 0 10vw;
+  padding-bottom: 2rem;
+  /* display: flex; */
+  /* grid-row: ; */
+}
+
+.box-cat{
+  width: 100%;
+  /* border : 1px solid pink; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
+  /* justify-content: space-between; */
+  grid-gap: 20px;
+}
+.title-cate{
+  padding: 2rem 0;
+}
+.none{
+  display: none;
+}
+h2{
+  font-size: 24px;
+  line-height: 20px;
+  color: #2E3333;
+}
+h3{
+  font-size: 18px;
+  line-height: 15.6px;
+  color: #2E3333;
+  margin-bottom: 10px;
+  /* border: 1px solid yellow; */
+}
+
+.box-meal{
+  width: 100%;
+  /* border: 2px solid orange; */
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: white;
+  /* margin: 5% 10%; */
+}
+.box-meal:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(33,33,33,.2);
+}
+.left-box{
+  width: 90%;
+  /* height: 140px; */
+  /* border: 2px solid blue; */
+}
+
+.left-box .descript-meal{
+  margin-top: 10px;
+  color: #808484;
+  font-size:14px;
+  line-height: 20.8px;
+  height: 45%;
+  /* border: 3px solid green; */
+  overflow: hidden;
+  /* width: 100%; */
+}
+#price{
+  /* border: 2px purple solid; */
+  font-size: 17px;
+  line-height: 14.7px;
+  margin-top: 5px;
+  color: #808484;
+}
+.box-meal > img{
+  width: 30%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: auto 0;
+}
