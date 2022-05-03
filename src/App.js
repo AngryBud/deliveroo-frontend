@@ -24,10 +24,7 @@ function App() {
   const [counter, setCounter] = useState([]);
 
   const handleChoice = (meal) => {
-    let o = meal.price;
-  
-    console.log("meal.price 111111 ::: ", typeof(o));
-    console.log("meal.price 222222 ::: ", o);
+
     if (!counter.length){
       var obj = {amount: 1, title: meal.title, price: Number(meal.price)};
       setCounter([...counter, obj]);
@@ -62,6 +59,7 @@ function App() {
       <Header rest={data.restaurant}/>
       <div className="body">
         <Category categories={data.categories} handleChoice={handleChoice}/>
+        {/* {counter.length > 0 && <Shop add={counter} setCounter={setCounter}/>} */}
         <Shop add={counter} setCounter={setCounter}/>
       </div>
     </div>
