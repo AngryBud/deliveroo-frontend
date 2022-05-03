@@ -17,7 +17,8 @@ function App() {
     setData(response.data);
     setIsLoading(false);
   };
-
+  //Le useEffect nous permet de faire la requête une seule fois
+  //Et surtout d'éviter des boucles infinies au niveau de notre app
   useEffect(() => {
     fetchData();
   }, []);
