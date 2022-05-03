@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .big-header{
@@ -25,11 +26,12 @@
   padding-left: 10vw;
 }
 .desc{
-  width: 80vw;
+  width: 100vw;
   height: 35vh;
-  margin: 5vh 10vw;
+  padding: 5vh 8vw;
   display: flex;
   justify-content: space-between;
+  /* border : 2px solid darkred; */
   font-size: 19px;
   line-height: 28.8px;
   color: #868A8A;
@@ -46,37 +48,30 @@
   width: 60%;
 }
 .desc > img{
-  width: 320px;
+  width: 350px;
   height: 200px;
   border-radius: 8px;
 }
 
 .body{
   background-color: #F2F5F5;
-  /* margin: 0 10vw;  */
-}
-.each-cat{
-  width: 100vw;
-  height: 110%;
-  /* border:red solid 2px; */
+  display: flex;
+  /* border: 2px solid blue; */
+  padding: 2vh 8vw;
 }
 
 .each{
-  width: 55vw;
-  /* border: 2px solid blue; */
-  margin: 0 10vw;
-  padding-bottom: 2rem;
-  /* display: flex; */
-  /* grid-row: ; */
+  width: 58vw;
+  /* border: 2px solid chartreuse; */
+  /* margin-right:30px; */
 }
 
 .box-cat{
   width: 100%;
-  /* border : 1px solid pink; */
+  /* border: 2px solid orange; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
-  /* justify-content: space-between; */
   grid-gap: 20px;
 }
 .title-cate{
@@ -115,7 +110,6 @@ h3{
 }
 .left-box{
   width: 90%;
-  /* height: 140px; */
   /* border: 2px solid blue; */
 }
 
@@ -124,10 +118,16 @@ h3{
   color: #808484;
   font-size:14px;
   line-height: 20.8px;
-  height: 45%;
+  height: 48%;
   /* border: 3px solid green; */
   overflow: hidden;
+  padding-right: 5px;
   /* width: 100%; */
+}
+.stars{
+  display: flex;
+  /* border: 2px purple solid; */
+  align-items: center;
 }
 #price{
   /* border: 2px purple solid; */
@@ -136,10 +136,121 @@ h3{
   margin-top: 5px;
   color: #808484;
 }
+.left-box span{
+  color: #FF8000;
+  margin-left: 1rem;
+  font-size: 14px;
+  line-height: 10.7px;
+  font-weight: bold;
+  margin-top: 5px;
+}
 .box-meal > img{
   width: 30%;
   height: 80%;
   object-fit: cover;
   border-radius: 10px;
   margin: auto 0;
+}
+
+.boxShop{
+  /* border: 2px sienna solid; */
+  width: 25vw;
+  height: 60%;
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  position: sticky;
+  top: 5vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#valid{
+  width: 95%;
+  margin-top: 10px;
+  height: 60px;
+  background-color: #02CDBD;
+  border-radius: 5px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color:white;
+}
+.lineDish{
+  display: flex;
+  width: 100%;
+  margin: 10px 2px;
+  display: flex;
+  justify-content: space-between;
+  border: 4px solid orange;
+  color : #2E3333;
+  font-size : 16px;
+  line-height: 13.3px;
+}
+.dishText-btn{
+  display: flex;
+  align-items: center;
+  /* margin: 0 4px; */
+}
+#dishAm{
+  margin:0 3px;
+}
+#titleDish{
+  /* border: 2px solid blue; */
+  margin-left: 5px;
+  width: 70%;
+}
+.priceDish{
+  /* border: 4px solid red; */
+  display: flex;
+  justify-content: flex-end;
+  width: 6rem;
+}
+.lineDish #btn{
+  border: 4px solid red;
+  color: #02CDBD;
+  border: none;
+  margin-top: 5px;
+  font-size: 20px;
+  background-color: white;
+}
+.lineDish button:hover{
+  cursor: pointer;
+}
+.allDish{
+  /* border: #02CDBD 2px solid; */
+  width: 95%;
+  border-bottom: 1px solid grey;
+}
+.firstTotal{
+  /* border: purple 2px solid; */
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  margin-top : 15px;
+  margin-bottom: 15px;
+}
+.sousTotal{
+  /* border: blue 2px solid; */
+  display: flex;
+  justify-content: space-between;
+  margin-top : 10px;
+  margin-bottom: 10px;
+}
+.delivery{
+  /* border: rgb(185, 167, 10) 2px solid; */
+  display: flex;
+  justify-content: space-between;
+}
+.fullTotal{
+  width: 95%;
+  /* border: rgb(228, 122, 223) 2px solid; */
+  display: flex;
+  justify-content: space-between;
+  font-weight: 550;
+  margin-bottom: 5px;
 }
