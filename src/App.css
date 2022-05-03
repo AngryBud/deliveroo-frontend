@@ -5,135 +5,121 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+.none{
+  display: none;
+}
+.App{
+  width: 100vw;
+}
 
+/* HEADER */
 .big-header{
   width: 100%;
-  height : 45vh;
-  /* padding: 0 15vw; */
-  /* background-color: aqua; */
-  /* border: 2px solid aqua; */
+  height : 48vh;
 }
 
 .top-header{
-  width: 100vw;
-  height: 10vh;
+  width: 100%;
+  height: 20%;
   border-bottom: 1px grey solid;
-  /* border:solid red 1px; */
+  padding: 0 8%;
 }
 .top-header > img{
-  width:auto;
   height: 100%;
-  padding-left: 10vw;
 }
-.desc{
+.description{
   width: 100vw;
   height: 35vh;
-  padding: 5vh 8vw;
+  padding: 2% 8.5%;
   display: flex;
   justify-content: space-between;
-  /* border : 2px solid darkred; */
+
   font-size: 19px;
   line-height: 28.8px;
   color: #868A8A;
 }
 
-.desc h1{
+.name-description{
+  width: 70%;
+  padding-top: 2%;
+}
+
+.description h1{
   font-size: 32px;
   line-height: 26.7px;
   color: #2E3333;
   margin-bottom: 5vh;
 }
 
-.name-desc{
-  width: 60%;
-}
-.desc > img{
+.description > img{
   width: 350px;
   height: 200px;
   border-radius: 8px;
 }
-
+/* BODY */
 .body{
   background-color: #F2F5F5;
   display: flex;
-  /* border: 2px solid blue; */
-  padding: 2vh 8vw;
+  padding: 4vh 8vw;
 }
-
-.each{
-  width: 58vw;
-  /* border: 2px solid chartreuse; */
-  /* margin-right:30px; */
+/* LIST DES PLAT */
+.fullList{
+  width: 70%;
+}
+.h2{
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  color: #2E3333;
 }
 
 .box-cat{
   width: 100%;
-  /* border: 2px solid orange; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
   grid-gap: 20px;
+  margin: 1rem 0;
 }
-.title-cate{
-  padding: 2rem 0;
-}
-.none{
-  display: none;
-}
-h2{
-  font-size: 24px;
-  line-height: 20px;
-  color: #2E3333;
-}
-h3{
-  font-size: 18px;
-  line-height: 15.6px;
-  color: #2E3333;
-  margin-bottom: 10px;
-  /* border: 1px solid yellow; */
-}
-
+/* BOX INDIVIDUELLE */
 .box-meal{
   width: 100%;
-  /* border: 2px solid orange; */
   height: 160px;
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
   border-radius: 10px;
   background-color: white;
-  /* margin: 5% 10%; */
 }
 .box-meal:hover{
   cursor: pointer;
   box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
 .left-box{
-  width: 90%;
-  /* border: 2px solid blue; */
+  width: 65%;
 }
-
-.left-box .descript-meal{
-  margin-top: 10px;
+h3{
+  font-size: 1.2rem;
+  font-weight: 450;
+  line-height: 20px;
+  color: #2E3333;
+  margin-bottom: 10px;
+}
+.descript-meal{
   color: #808484;
   font-size:14px;
   line-height: 20.8px;
-  height: 48%;
-  /* border: 3px solid green; */
+  height: 32%;
   overflow: hidden;
-  padding-right: 5px;
-  /* width: 100%; */
 }
 .stars{
   display: flex;
-  /* border: 2px purple solid; */
   align-items: center;
+  padding-top: 5px;
 }
 #price{
-  /* border: 2px purple solid; */
   font-size: 17px;
   line-height: 14.7px;
-  margin-top: 5px;
   color: #808484;
 }
 .left-box span{
@@ -142,21 +128,17 @@ h3{
   font-size: 14px;
   line-height: 10.7px;
   font-weight: bold;
-  margin-top: 5px;
 }
 .box-meal > img{
-  width: 30%;
-  height: 80%;
+  width: 35%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  margin: auto 0;
 }
 
 .boxShop{
-  /* border: 2px blue solid; */
-  width: 25vw;
+  width: 31%;
   height: 100%;
-  margin-top: 10px;
   margin-left: 30px;
   background-color: white;
   border-radius: 5px;
@@ -166,13 +148,12 @@ h3{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
 
 .boxShop2{
-  /* border: 2px red solid; */
-  width: 25vw;
-  height: 160px;
-  margin-top: 10px;
+  width: 31%;
+  height: 100%;
   margin-left: 30px;
   background-color: white;
   border-radius: 5px;
@@ -180,8 +161,9 @@ h3{
   position: sticky;
   top: 5vh;
   flex-direction: column;
-  /* justify-content: flex-start; */
+
   align-items: center;
+  box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
 #valid{
   width: 95%;
@@ -194,6 +176,7 @@ h3{
   font-weight: bold;
   font-size: 16px;
   color:white;
+  cursor: pointer;
 }
 .spanValid{
   color:#868A8A;
@@ -211,21 +194,18 @@ h3{
   font-size: 16px;
   color:white;
   margin-bottom: 40px;
-}
-#valid{
-  cursor: pointer;
-}
-#invalid{
   cursor: not-allowed;
 }
-
+.allDish{
+  width: 95%;
+  margin-top: 10px;
+  border-bottom: 1px solid grey;
+}
 .lineDish{
-  display: flex;
   width: 100%;
-  margin: 10px 2px;
   display: flex;
+  margin-bottom: 5px;
   justify-content: space-between;
-  /* border: 4px solid orange; */
   color : #2E3333;
   font-size : 16px;
   line-height: 13.3px;
@@ -233,24 +213,8 @@ h3{
 .dishText-btn{
   display: flex;
   align-items: center;
-  /* margin: 0 4px; */
-}
-#dishAm{
-  margin:0 3px;
-}
-#titleDish{
-  /* border: 2px solid blue; */
-  margin-left: 5px;
-  width: 70%;
-}
-.priceDish{
-  /* border: 4px solid red; */
-  display: flex;
-  justify-content: flex-end;
-  width: 6rem;
-}
-.lineDish #btn{
-  border: 4px solid red;
+
+}.lineDish #btn{
   color: #02CDBD;
   border: none;
   margin-top: 5px;
@@ -260,45 +224,56 @@ h3{
 .lineDish button:hover{
   cursor: pointer;
 }
-.allDish{
-  /* border: #02CDBD 2px solid; */
-  width: 95%;
-  border-bottom: 1px solid grey;
+#dishAm{
+  margin:0 3px;
 }
+#titleDish{
+  margin-left: 5px;
+  width: 90%;
+}
+.priceDish{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 6rem;
+}
+
 .boxTotal{
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+.boxTotal2{
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  margin-left: 10px;
+  align-content: space-between;
 }
 .firstTotal{
-  /* border: purple 2px solid; */
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid grey;
-  margin-top : 15px;
   margin-bottom: 15px;
 }
 .sousTotal{
-  /* border: blue 2px solid; */
   display: flex;
   justify-content: space-between;
   margin-top : 10px;
   margin-bottom: 10px;
 }
 .delivery{
-  /* border: rgb(185, 167, 10) 2px solid; */
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 .fullTotal{
-  width: 95%;
-  /* border: rgb(228, 122, 223) 2px solid; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   font-weight: 550;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }

@@ -13,7 +13,7 @@ function App() {
 // http://localhost:3100/
   const fetchData = async () => {
     const response = await axios.get("http://localhost:3100/");
-    console.log(response.data);
+    // console.log(response.data);
     setData(response.data);
     setIsLoading(false);
   };
@@ -38,20 +38,12 @@ function App() {
           setCounter(newTab);
         }
         else if (i === counter.length -1  && counter[i].title !== meal.title){
-          // console.log("price ::::: ", Number(meal.price));
           obj = {amount: 1, title: meal.title, price: (Number(meal.price).toFixed(2))};
           setCounter([...counter, obj]);
         }
       }
     }
   }
-
-//   const handleClick = (index) =>{
-//     let am = counter[index].amount - 1;
-//       let newTab = [...counter];   
-//       newTab[index].amount = am;
-//       setCounter(newTab);
-// }
   return isLoading ? (
     <span>En cours de chargement... </span>
   ) : (
